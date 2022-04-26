@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.3.0">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>460</x>
+      <y>290</y>
+      <w>220</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>input::Keyboard
+--
++registerCommand(key, handler)
++update(elapsedTime)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>760</x>
+      <y>460</y>
+      <w>190</w>
+      <h>310</h>
+    </coordinates>
+    <panel_attributes>objects::Snake
+--
+-segmentsToAdd : integer
+-SnakeFacing : Direction
+-elapsedIntervale: integer
++segments : []
+--
+-turnUp()
+-turnDown()
+-turnLeft()
+-turnRight()
+-checkCollision(x, y)
+-moveSnake(xInc, yInc)
+
++update(elapsedTime)
++turnUp()
++turnDown()
++turnLeft()
++turnRight()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>460</x>
+      <y>470</y>
+      <w>190</w>
+      <h>290</h>
+    </coordinates>
+    <panel_attributes>GameModel
+--
+-grid : [][]
+-obstacles : []
+-food : ref
++snake : objects::Snake
++obstacles : []
++food : ref
+--
+-initialize()
+-createFood()
+-reportEvent(info)
+
++update(elapsedTime)
++turnUp()
++turnDown()
++turnLeft()
++turnRight()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>760</x>
+      <y>820</y>
+      <w>320</w>
+      <h>150</h>
+    </coordinates>
+    <panel_attributes>:Graphics
+--
+-canvas : HTML5 Canvas
+-context : HTML5 2d context
++width : integer
++height : integer
+--
++clear()
++drawSquare(corner, size, fill, stroke)
++drawRectangle(corner, width, height, fill, stroke)
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>430</x>
+      <y>820</y>
+      <w>230</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>:Render
+--
++Snake(model, cellSize, graphics)
++Game(model, graphics)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>650</x>
+      <y>810</y>
+      <w>130</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=1
+m2=1
+uses &gt;</panel_attributes>
+    <additional_attributes>110.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>640</x>
+      <y>460</y>
+      <w>140</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;90.0;60.0;90.0;60.0;10.0;120.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>130</x>
+      <y>370</y>
+      <w>220</w>
+      <h>170</h>
+    </coordinates>
+    <panel_attributes>screens::GamePlay
+--
+-myKeyboard : input::Keyboard
+-model : GameModel
+--
+-update(elapsedTime)
+-render()
+-gameLoop(time)
+
++initialize()
++run</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>340</x>
+      <y>290</y>
+      <w>140</w>
+      <h>140</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
+m1=1
+m2=1</panel_attributes>
+    <additional_attributes>10.0;110.0;70.0;110.0;70.0;10.0;120.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>340</x>
+      <y>410</y>
+      <w>140</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
+m1=1
+m2=1</panel_attributes>
+    <additional_attributes>10.0;10.0;70.0;10.0;70.0;70.0;120.0;70.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>340</x>
+      <y>440</y>
+      <w>110</w>
+      <h>420</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=1
+m2=1
+&lt; uses</panel_attributes>
+    <additional_attributes>90.0;390.0;50.0;390.0;50.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+</diagram>

@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30804.86
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Input - Keyboard 1", "Input - Keyboard 1\Input - Keyboard 1.csproj", "{6ADA4C0B-9465-4850-99D0-E93BE1F9181A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6ADA4C0B-9465-4850-99D0-E93BE1F9181A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6ADA4C0B-9465-4850-99D0-E93BE1F9181A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6ADA4C0B-9465-4850-99D0-E93BE1F9181A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6ADA4C0B-9465-4850-99D0-E93BE1F9181A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {26AD9BD5-76E6-4C15-AE8F-A9D4C9A9ED64}
+	EndGlobalSection
+EndGlobal

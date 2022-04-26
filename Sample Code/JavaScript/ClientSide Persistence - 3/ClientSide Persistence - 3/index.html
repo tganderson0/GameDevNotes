@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<html lang = "en-US">
+<head>
+    <meta charset = "UTF-8">
+    <title>Client Side Persistence</title>
+    <link rel = "stylesheet" type = "text/css" href = "styles/gameloop.css">
+</head>
+<body>
+    <div id = "div-container">
+        <div id = "div-title">
+            <h1 class = "heading">Client Side Persistence</h1>
+        </div>
+        
+        <div id = "div-console">
+        </div>
+
+        <div id = "div-options">
+            <table>
+                <tr>
+                    <td><span>Key</span></td>
+                    <td><input id = "id-key" type = "text" class = "input"></td>
+                </tr>
+                <tr>
+                    <td><span>Value</span></td>
+                    <td><input id = "id-value" type = "text" class = "input"></td>
+                </tr>
+                <tr>
+                    <td>
+                        <button onclick="addValue()" type = "button">Add</button>
+                    </td>
+                    <td>
+                        <button onclick="removeValue()" type = "button">Remove</button>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        
+        <div id = "div-footer">
+            Created for CS 5410
+        </div>
+    </div>
+
+    <script src = "scripts/gameloop.js"></script>
+</body>
+</html>

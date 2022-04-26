@@ -1,0 +1,44 @@
+#div-container 
+{ 
+    width: 500px; 
+}
+ 
+#div-title
+{
+    background-color: #66CCFF;
+    text-align: center;
+}
+.heading
+{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+#div-console
+{
+    overflow: auto;
+    border: 1px solid black;
+    height: 200px;
+    width: 298px;
+    float: left;
+}
+
+#div-options
+{
+    border: 1px solid black;
+    height: 200px;
+    width: 198px;
+    float: left;
+}
+
+.input
+{
+    float: right;
+}
+
+#div-footer
+{
+    background-color: #66CCFF;
+    clear: both;
+    text-align: center;
+}

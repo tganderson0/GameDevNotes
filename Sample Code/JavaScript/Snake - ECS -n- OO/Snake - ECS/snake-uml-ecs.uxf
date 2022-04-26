@@ -1,0 +1,398 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.3.0">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>520</x>
+      <y>790</y>
+      <w>170</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>Entity
+--
++id : integer
+--
++addComponent(c)
++removeComponent(c)
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>790</x>
+      <y>780</y>
+      <w>170</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>Component
+--
++name
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>630</x>
+      <y>300</y>
+      <w>290</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>/System/
+--
+--
+/+update(elapsedTime, entities, reportEvent)/</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1070</x>
+      <y>590</y>
+      <w>180</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>Appearance
+--
++fill : color
++stroke : color
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1070</x>
+      <y>670</y>
+      <w>180</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>Collision
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1070</x>
+      <y>750</y>
+      <w>180</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>Food
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1070</x>
+      <y>830</y>
+      <w>180</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>Movable
+--
++facing : Direction
++segmentsToAdd : integer
++moveInterval : integer
++elapsedInterval : integer
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1070</x>
+      <y>910</y>
+      <w>180</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>Position
+--
++x : integer
++y : integer
++segments : []</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1070</x>
+      <y>1010</y>
+      <w>180</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>KeyboardControlled
+--
++keys : []</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>950</x>
+      <y>590</y>
+      <w>140</w>
+      <h>220</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;200.0;80.0;200.0;80.0;10.0;120.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>950</x>
+      <y>670</y>
+      <w>140</w>
+      <h>140</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;120.0;80.0;120.0;80.0;10.0;120.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>950</x>
+      <y>750</y>
+      <w>140</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;40.0;80.0;40.0;80.0;10.0;120.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>950</x>
+      <y>780</y>
+      <w>140</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;80.0;10.0;80.0;60.0;120.0;60.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>950</x>
+      <y>780</y>
+      <w>140</w>
+      <h>160</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;80.0;10.0;80.0;140.0;120.0;140.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>950</x>
+      <y>780</y>
+      <w>140</w>
+      <h>260</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;80.0;10.0;80.0;240.0;120.0;240.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1070</x>
+      <y>200</y>
+      <w>290</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>KeyboardInput
+--
+-keysDown : []
+--
+-keyPress(event)
+-keyRelease(event)
++update(elapsedTime, entities)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1070</x>
+      <y>330</y>
+      <w>290</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>Collision
+--
+--
+-findMovable(entities)
+-collides(a, b)
++collidesWithAny(proposed, entities)
++update(elapsedTime, entities, reportEvent)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1070</x>
+      <y>80</y>
+      <w>290</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>Movement
+--
+--
+-move(entity, xInc, yInc)
+-moveEntity((entity, elapsedTime)
++update(elapsedTime, entities)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>910</x>
+      <y>200</y>
+      <w>180</w>
+      <h>130</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;110.0;120.0;110.0;120.0;10.0;160.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1070</x>
+      <y>450</y>
+      <w>290</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>Render
+--
+--
+-renderEntities(entities)
++update(elapsedTime, entities)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>910</x>
+      <y>80</y>
+      <w>180</w>
+      <h>250</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;230.0;120.0;230.0;120.0;10.0;160.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>910</x>
+      <y>300</y>
+      <w>180</w>
+      <h>180</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;120.0;10.0;120.0;160.0;160.0;160.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>910</x>
+      <y>300</y>
+      <w>180</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;120.0;10.0;120.0;40.0;160.0;40.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>680</x>
+      <y>790</y>
+      <w>130</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
+m1=1
+m2=0..*</panel_attributes>
+    <additional_attributes>10.0;10.0;110.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>310</x>
+      <y>490</y>
+      <w>180</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>GameModel
+--
+-entities : Entity[]
+-systems : System[]
+--
++update(elapsedTime)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>380</x>
+      <y>570</y>
+      <w>160</w>
+      <h>260</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-
+m1=1
+m2=0..*</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;230.0;140.0;230.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>380</x>
+      <y>300</y>
+      <w>270</w>
+      <h>210</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-
+m1=1
+m2=0..*</panel_attributes>
+    <additional_attributes>10.0;190.0;10.0;10.0;250.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>0</x>
+      <y>470</y>
+      <w>190</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>screens::GamePlay
+--
+-model : GameModel
+--
+-update(elapsedTime)
+-gameLoop(time)
++initialize()
++run</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>180</x>
+      <y>490</y>
+      <w>150</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
+m1=1
+m2=1</panel_attributes>
+    <additional_attributes>10.0;10.0;130.0;10.0</additional_attributes>
+  </element>
+</diagram>
